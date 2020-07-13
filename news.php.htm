@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AES motomation - Latest News</title>
+
+
+	<link rel="stylesheet" href="fontstylesheet.css" tppabs="http://www.motomation.com/css/fontstylesheet.css">
+	<link rel="stylesheet" href="accordion.css" tppabs="http://www.motomation.com/css/accordion.css">
+	<link rel="stylesheet" href="bootstrap.css" tppabs="http://www.motomation.com/css/bootstrap.css">
+	<script src="jquery-1.11.3.min.js" tppabs="http://www.motomation.com/js/jquery-1.11.3.min.js"></script>
+	<script src="bootstrap.js" tppabs="http://www.motomation.com/js/bootstrap.js"></script>
+
+	<!-- <script src="js/jquery-2.1.3.min.js"></script> -->
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+	<!-- PureCookie
+<link rel="stylesheet" type="text/css" href="css/purecookie.css" async />
+<script src="js/purecookie.js" async></script>
+-->
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="html5shiv.min.js" tppabs="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="respond.min.js" tppabs="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script>
+		$( function () {
+			$( ".expand" ).on( "click", function () {
+				if ( $( this ).next().css( "display" ) == "none" ) {
+					$( ".expand" ).next().css( "display", "none" );
+					$expandold = $( ".expand" ).find( ">:first-child" );
+					$expandold.text( "+" );
+					$( this ).next().slideToggle( 200 );
+					$expand = $( this ).find( ">:first-child" );
+					$expand.text( "-" );
+				} else {
+					$( ".expand" ).next().css( "display", "none" );
+					$expand = $( this ).find( ">:first-child" );
+					$expand.text( "+" );
+				}
+
+			} );
+		} );
+
+		$( function () {
+			$( '#integration-list ul li a' ).eq( 0 ).trigger( 'click' );
+		} );
+	</script>
+</head>
+
+<body style="font-family: 'din_alternatebold'; font-size: 16px;">
+
+
+	<!-- grab header + navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top" style="margin: 0px;">
+  <div class="container-fluid" style="margin: 10px;"> 
+   
+   
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.htm" tppabs="http://www.motomation.com/"><img src="motologo.jpg" tppabs="http://www.motomation.com/images/motologo.jpg" width="273" height="58"></a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-right" role="search" action="http://www.google.com/search" method="get">
+        <div class="form-group">
+          <input name="sitesearch" type="hidden" value="motomation.com">
+          <input autocomplete="on" class="form-control search" name="q" placeholder="Search motomation" required="required"  type="text">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right" style="font-size: 17px;">
+        <li><a href="index.htm" tppabs="http://www.motomation.com/"><strong>HOME</strong></a> </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><strong>PRODUCTS</strong><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="menu-item dropdown dropdown-submenu"> <a href="index-1.htm" tppabs="http://www.motomation.com/robotics/" class="dropdown-toggle" data-toggle="dropdown">ROBOTICS</a>
+              <ul class="dropdown-menu">
+                <li class="menu-item "> <a href="index-2.htm" tppabs="http://www.motomation.com/webproducts/robotics/semiconductor/3link/">SEMICONDUCTOR</a> </li>
+                <li class="menu-item "> <a href="index-3.htm" tppabs="http://www.motomation.com/webproducts/robotics/FPD/">FLAT PANEL DISPLAY</a> </li>
+                <li class="menu-item "> <a href="index-4.htm" tppabs="http://www.motomation.com/webproducts/robotics/other/scara/">CUSTOM / SCARA</a> </li>
+              </ul>
+              <li><a href="index-9.htm" tppabs="http://www.motomation.com/webproducts/loadports/N2purge">LOAD PORTS</a> </li>
+              <li><a href="index-7.htm" tppabs="http://www.motomation.com/webproducts/efemsplat">EFEMs / PLATFORMS</a> </li>
+            <li><a href="index-5.htm" tppabs="http://www.motomation.com/webproducts/autoteach/">AUTO TEACH</a> </li>
+            <li><a href="index-6.htm" tppabs="http://www.motomation.com/webproducts/accessories/edgepreal/">ACCESSORIES</a> </li>
+            </li>
+          </ul>
+        </li>
+        <li><a href="contact.php.htm" tppabs="http://www.motomation.com/contact.php"><strong>CONTACT</strong></a> </li>
+        <li><a href="news.php.htm" tppabs="http://www.motomation.com/news.php"><strong>NEWS</strong></a> </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><strong>COMPANY</strong><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+            <li><a href="activities.php.htm" tppabs="http://www.motomation.com/webcompany/activities.php">ACTIVITIES</a> </li>
+            <li><a href="partners.php.htm" tppabs="http://www.motomation.com/webcompany/partners.php">PARTNERS</a> </li>
+            <li><a href="locations.php.htm" tppabs="http://www.motomation.com/webcompany/locations.php">LOCATIONS</a> </li>
+                        <li class="menu-item dropdown dropdown-submenu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">CAREERS</a>
+            <ul class="dropdown-menu">
+							<li><a href="careersDE.php.htm" tppabs="http://www.motomation.com/webcompany/careersDE.php">GERMANY</a> </li>
+							<li><a href="careers.php.htm#" tppabs="http://www.motomation.com/webcompany/careers.php#">UNITED STATES</a> </li>
+							<li><a href="careersTW.php.htm#" tppabs="http://www.motomation.com/webcompany/careersTW.php#">TAIWAN</a> </li>
+						</ul>
+			  </li>
+            <li role="separator" class="divider"></li>
+            <li><a href="privacy.php.htm" tppabs="http://www.motomation.com/webcompany/privacy.php">PRIVACY POLICY</a> </li>
+            <li><a href="datenschutz.php.htm" tppabs="http://www.motomation.com/webcompany/datenschutz.php">DATENSCHUTZ</a> </li>
+            <li><a href="legal.php.htm" tppabs="http://www.motomation.com/webcompany/legal.php">LEGAL NOTICE</a> </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+	<!--  SECTION-1 -->
+
+	<section>
+
+		<div class="techbanner" style="margin-top: 75px;">
+			<h2 style="color:white; padding: 0px; margin-left: 30px; margin-top: 0px"> Latest News </h2>
+		</div>
+
+		<div id="integration-list">
+			<ul>
+
+
+
+				<li>
+					<a class="expand">
+						<div class="right-arrow">+</div>
+						<h3>2019</h3>
+					</a>
+
+					<div class="detail">
+					
+					<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+								<img src="clean.jpg" tppabs="http://www.motomation.com/images/news/clean.jpg" height="80px;" width="115px;""/>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>November<br> We are pleased to inform you that we have doubled our US headquarters by moving to 4041 Clipper Court, Fremont CA. This allows us over 1,000 sq. ft of additional cleanroom space.
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						
+						
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+								<img src="tinyifem.jpg" tppabs="http://www.motomation.com/images/news/tinyifem.jpg" height="80px;"/>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>July<br> We are pleased to introduce to you our latest addition to our product portfolio, iFEM – integrated Front End Modules. This handling solution is designed to be incorporated to any process tool by providing same functionality/performance as standard EFEMs at significant cost savings.
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+								<img src="twoffice.jpg" tppabs="http://www.motomation.com/images/news/twoffice.jpg" height="80px;"/>
+							</div>
+						</div>
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>April<br> We are pleased to inform you, that we have already last year established a subsidiary in Taiwan and that AES motomation Taiwan Ltd. just moved to a new facility with cleanroom and sufficient storage capacity.
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+								<img src="20years.jpeg" tppabs="http://www.motomation.com/images/20years.jpeg" height="80px;"/>
+							</div>
+						</div>
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>January<br> 20 years in business – We are pleased to inform you, that on 10th of November 2018 we have celebrated our 20th anniversary. Representatives from our Japanese principals and almost all AES motomation members gathered in Munich, Germany, to combine this celebration with SEMICON Europa 2018.
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+
+
+
+
+				<li>
+					<a class="expand">
+						<div class="right-arrow">+</div>
+						<h3>2018</h3>
+					</a>
+
+					<div class="detail">
+					
+					<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+								<img src="LTU.jpg" tppabs="http://www.motomation.com/images/news/LTU.jpg" height="80px"/>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>October<br>On behalf of SINFONIA TECHNOLOGY we are pleased to introduce you an innovative solution for next generation vacuum handling requirements, Linear Transport Unit.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						
+						
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+								<img src="N2EFEM.jpg" tppabs="http://www.motomation.com/images/N2EFEM.jpg" height="80px"/>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>July<br> On behalf of SINFONIA TECHNOLOGY we are pleased to introduce you to the new N2-EFEM. Together with Sinfonia’s N2 Sealed Load Port, 100 ppm of O2 can easily be achieved and maintained while consuming extremely low N2 gas.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+								<img src="sc5000-1.jpg" tppabs="http://www.motomation.com/images/news/SC5000.jpg" height="80px"/>
+							</div>
+						</div>
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>April<br> On behalf of Sankyo Japan we are pleased to inform you that a new optional add-on is available for the SC5000 Robot Controller Series: EthernetIP, enhancing the control functionality and flexibility.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+								<img src="n2lp.jpg" tppabs="http://www.motomation.com/images/news/n2lp.jpg" height="85%"/>
+							</div>
+						</div>
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>January<br> On behalf of SINFONIA TECHNOLOGY we are pleased to introduce you to the new N2 Sealed Load Port. Designed to be used in conjunction with a N2-EFEM, its patented side clamps completely sealed an open FOUP during processing, creating two separate atmospheres: O2 outside and as low as 100ppm of O2 inside the EFEM.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+
+
+
+
+				<li>
+					<a class="expand">
+						<div class="right-arrow">+</div>
+						<h3>2017</h3>
+
+					</a>
+
+					<div class="detail">
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>October<br> On behalf of Sankyo Japan we are pleased to introduce to you the latest add-on to the SR8241 robot series, the SR8241-4xxx system. Due to further reduced footprint, this latest version enables extremely compact EFEMs while still serving up to 4 load ports without the need of track axis.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>July<br> On behalf of SINFONIA TECHNOLOGY we are pleased to introduce you to the new Multi-Carrier Universal Load Port. Just by exchanging an adapter, 150mm/200mm Open Cassettes, 150mm/200mm FFC (Tape Frames) and 150mm/200mm Hoop Ring Cassettes can be used on the same Load Port</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>April<br> On behalf of Sankyo Japan we are pleased to inform you that a new version of the SC5000 Robot Controller Series is now available, the SC5000-EX4. Dedicated to Semiconductor applications, this version is a perfect combination along with our continuously improved Host interface software</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>January<br> On behalf of Sankyo Japan we are pleased to inform you that the new SR8241 robot system series is now available with several new features, for example the Universal Hand Interface. Without any modifications vacuum, edge-grip and passive end-effectors – with and without mapping sensor integrated to the end-effector – can be used.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+
+
+
+
+				<li>
+					<a class="expand">
+						<div class="right-arrow">+</div>
+						<h3>2016</h3>
+
+					</a>
+
+					<div class="detail">
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>October<br> We are pleased to introduce to you at SEMICON Europa 2016 the latest control enhancements for the Sankyo robot systems, featuring among others a high-speed In-/Output Board with own processor as well as an adaptive Mapping Function for various wafer sizes and carriers.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>July<br> On behalf of Sankyo Japan we are very pleased to inform you that the Pre-Aligner portfolio has been extended further by adding an 200/300mm Auto-Switch Aligner to the well-proven Vacuum Chuck line.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>April<br> We are pleased to introduce to you our new video showcase. These videos will quickly give you a very good understanding about the performance and unique features of our products. Get a feeling by seeing our products in action.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>January<br> On behalf of SINFONIA TECHNOLOGY we are pleased to inform you that by the end of 2015 more than 6,000 units of the N2 Purge Load Port have been shipped. Unique to these Load Ports are for example, the moveable purge nozzles. The applied technology combines the advantages of reliable FOUP handling with the avoidance of cross contamination and oxidation.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+
+
+
+
+
+
+				<li>
+					<a class="expand">
+						<div class="right-arrow">+</div>
+						<h3>2015</h3>
+
+					</a>
+
+					<div class="detail">
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>October<br> On behalf of Sankyo Japan we are very pleased to inform you that the Pre-Aligner portfolio has been extended further by adding Passive Aligner to the well-proven Vacuum Chuck and Edge Grip lines.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>July<br> We are pleased to introduce to you at SEMICON West 2015 the latest enhancements of our Auto Teaching solution, such as the new Graphical User Interface. Experience how easy, fast and reliable teaching can be by participating in a hands-on auto teaching demonstration.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>April<br> On behalf of SINFONIA TECHNOLOGY we are pleased to introduce you to the new 200/300mm Auto-Switch Adapter, offering additional features such as RFID reading on 200mm cassettes.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>January<br> On behalf of Sankyo Japan we are very pleased to inform you that the 200mm wafer handling portfolio has been extended, the end-effector as well as the pre-aligner line.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+
+
+
+
+				<li>
+					<a class="expand">
+						<div class="right-arrow">+</div>
+						<h3>2014</h3>
+
+					</a>
+
+					<div class="detail">
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>October<br> We are pleased to inform you that in 2014 AES motomation will also exhibit at SEMICON Japan. At this years SEMICON West, Europa and Japan, we are focusing on the introduction of our latest Auto Teaching enhancements. Please visit us at the upcoming events in Grenoble and Tokyo to participate in a hands-on Auto Teaching demonstration.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>July<br> We are pleased to introduce to you at SEMICON West 2014 the latest enhancements of our Auto Teaching solution, such as the wireless hand-held control unit. Experience how easy, fast and reliable teaching can be by participating in a hands-on auto teaching demonstration.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>April<br> On behalf of SINFONIA TECHNOLOGY we are pleased to introduce you to the new 200/300mm Auto-Switch option for the SELOP-7 Load Port. Without any modifications, FOUPs and 200mm Open Cassettes - loaded to a FOUP type container, can be used on the same Load Port.</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>January<br> On behalf of Sankyo Japan we are very pleased to inform you that the Pre-Aligner portfolio has been extended, the Vacuum Chuck as well as the Edge Grip line.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+
+
+
+
+				<li>
+					<a class="expand">
+						<div class="right-arrow">+</div>
+						<h3>2013</h3>
+
+					</a>
+
+					<div class="detail">
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>October<br> A cut above -- We are pleased to inform you that we have enhanced our Auto Teaching Solution: Now easier and more flexible to use. This solution is also applicable for upgrade of installed tools/robots in the field.
+
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>July<br> On behalf of Sankyo Japan we are pleased to inform you that the new SR8241 robot system series is now available with vertical strokes of up to 800mm. This series can be commonly used for 300mm and 450mm applications.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>April<br> On behalf of Sankyo Japan we are pleased to inform you that an additional version of the SC5000 Robot Controller Series is now available, the SC5000-EX2. Dedicated to Semiconductor applications, this version is a perfect combination along with the continuously improved Host interface software.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>January<br> On behalf of SINFONIA TECHNOLOGY we are pleased to inform you that by the end of 2012 more than 3,000 units of the N2 Purge Load Port have been shipped. Unique to these Load Ports are for example the moveable purge nozzles. The applied technology combines the advantages of reliable FOUP handling with the avoidance of cross contamination and oxidation.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+
+
+
+
+				<li>
+					<a class="expand">
+						<div class="right-arrow">+</div>
+						<h3>2012</h3>
+
+					</a>
+
+					<div class="detail">
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>October<br> On behalf of Sankyo Japan we are pleased to inform you that a new generation of the SR8241 robot system is now available. This latest version enables access to four 450mm FOUPs without using linear axis.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>July<br> AES motomation is proud to announce that we have our new website online. One of the new highlights is certainly our Auto Teaching video. Please explore our sites and learn more about how we will bring value to you and your customers.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>April<br> On behalf of SINFONIA TECHNOLOGY we are pleased to introduce a new 200mm Open Cassette Adapter Solution for the SELOP-7 300mm Load Ports.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>January<br> On behalf of SINFONIA TECHNOLOGY we are pleased to inform you, that the the 450mm Load Port SELOP-18 is now also available with N2 Purge Function.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+
+
+
+
+				<li>
+					<a class="expand">
+						<div class="right-arrow">+</div>
+						<h3>2011</h3>
+
+					</a>
+
+					<div class="detail">
+						<div id="left" style="width:15%;float:left;height:100%;">
+							<div id="sup" align="right">
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>October<br> On behalf of Sankyo Japan, we are pleased to inform you, that the first 450mm robot systems were shipped to a major European Equipment Manufacturer.
+
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="right" style="width:85%;float:right;height:100%;padding-left:20px;">
+							<div id="sup">
+								<div>July<br> AES motomation is proud to announce that we are now the North American and European (since September 2009) representative for Sinfonia Technology. Sinfonia Technology established in 1917, formerly known as Shinko Electric, employs more than 3,000 people and is a leading Japanese supplier of load ports and other wafer handling products to top tier customers in Asia and America.
+									</span>
+									<br/>
+
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</li>
+
+
+
+
+
+			</ul>
+		</div>
+	</section>
+
+
+
+	<!-- grab header + navigation -->
+	<div class="well">
+  <div class="row align-items-center">
+    <div class="col-lg-3 page-header text-center" style="padding: 0px; margin: 0px;">
+      <p style="padding-left: 0px; padding-right: 0px; margin-top:15px"> <img class="img" alt="aes motomation logo" src="motologo_white.png" tppabs="http://www.motomation.com/images/motologo_white.png" data-holder-rendered="true"> </p>
+    </div>
+    <div class="col-lg-2 page-header text-center" style="padding: 0px; padding-left: 0px; margin: 0px;">
+      <p style="padding-left: 0px; padding-right: 0px"> 
+        <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="contact.php.htm" tppabs="http://www.motomation.com/contact.php" style="color: white">CONTACT</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="news.php.htm" tppabs="http://www.motomation.com/news.php" style="color: white">NEWS</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="legal.php.htm" tppabs="http://www.motomation.com/webcompany/legal.php" style="color: white">LEGAL</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="locations.php.htm" tppabs="http://www.motomation.com/webcompany/locations.php" style="color: white">LOCATIONS</a></h4>
+      </p>
+    </div>
+    <div class="col-lg-2 page-header text-center" style="padding: 0px; margin: 0px;">
+      <p style="padding-left: 0px; padding-right: 0px">
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="index-2.htm" tppabs="http://www.motomation.com/webproducts/robotics/semiconductor/3link/" style="color: white">SEMICONDUCTOR ROBOTS</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="index-3.htm" tppabs="http://www.motomation.com/webproducts/robotics/FPD/" style="color: white">FLAT PANEL ROBOTS</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="index-4.htm" tppabs="http://www.motomation.com/webproducts/robotics/other/scara/" style="color: white">CUSTOM &amp; SCARA ROBOTS</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="index-9.htm" tppabs="http://www.motomation.com/webproducts/loadports/N2purge/" style="color: white">LOAD PORTS</a></h4>
+      </p>
+    </div>
+    <div class="col-lg-2 page-header text-center" style="padding: 0px; margin: 0px;">
+      <p style="padding-left: 0px; padding-right: 0px">
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="index-5.htm" tppabs="http://www.motomation.com/webproducts/autoteach/" style="color: white">AUTO TEACH</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="index-7.htm" tppabs="http://www.motomation.com/webproducts/efemsplat/" style="color: white">EFEMs &amp; PLATFORMS</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="index-6.htm" tppabs="http://www.motomation.com/webproducts/accessories/edgepreal/" style="color: white">ACCESSORIES</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="activities.php.htm" tppabs="http://www.motomation.com/webcompany/activities.php" style="color: white">ACTIVITIES</a></h4>
+      </p>
+    </div>
+    <div class="col-lg-2 page-header text-center" style="padding: 0px; margin: 0px;">
+      <p style="padding-left: 0px; padding-right: 0px">
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="careers.php.htm" tppabs="http://www.motomation.com/webcompany/careers.php" style="color: white">CAREERS USA</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="careersDE.php.htm" tppabs="http://www.motomation.com/webcompany/careersDE.php" style="color: white">CAREERS GERMANY</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="careersTW.php.htm" tppabs="http://www.motomation.com/webcompany/careersTW.php" style="color: white">CAREERS TAIWAN</a></h4>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;"><a href="partners.php.htm" tppabs="http://www.motomation.com/webcompany/partners.php" style="color: white">PARTNERS</a></h4>
+      </p>
+    </div>
+    <div class="col-lg-1 page-header text-center" style="padding: 0px; margin: 0px;">
+      <p style="padding: 0px; vertical-align: top;" align="left"> <br><a href="javascript:if(confirm(%27https://vimeo.com/user51579660  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://vimeo.com/user51579660%27" tppabs="https://vimeo.com/user51579660"><img src="vimeo.png" tppabs="http://www.motomation.com/images/vimeo.png" width="40px" height="40px"></a>
+      <h4 style="color: #fff; text-align: left; font-size: 12px;" align="left"><a href="javascript:if(confirm(%27https://vimeo.com/user51579660  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://vimeo.com/user51579660%27" tppabs="https://vimeo.com/user51579660" style="color: white">VIMEO</a></h4>
+      </p>
+    </div>
+  </div>
+</div>
+	<footer class="text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<p>Copyright 2020 © AES motomation. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- / FOOTER -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="jquery-1.11.3.min.js" tppabs="http://www.motomation.com/js/jquery-1.11.3.min.js"></script>
+
+
+</body>
+
+</html>
